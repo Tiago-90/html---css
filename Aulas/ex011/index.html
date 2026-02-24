@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagens Dinamicas</title>
+    <title>Midias em HTML5</title>
 </head>
 <body>
     
+<h1>Imagens Dinamicas</h1>
+
+<p>Tente abrir este site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+<picture>
+<source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagens Dinaicas">
+</picture>
+
+<h1>Reprodução de audios</h1>
+
+<p>Vamos ouvir um pouco de musica</p>
+
+<audio src="midia/sunset 52 - jeremy black.mp3" controls autoplay loop></audio>
+<p>Agora vê se consegues ouvir o seguinte audio:</p>
+<audio preload="metadata" autoplay controls loop>
+    <source src="midia/beatiful mess - jeremy black.mp3" type="audio/mpeg">
+    <source src="midia/beatiful mess - jeremy black.ogg" type="audio/ogg">
+    <source src="midia/beatiful mess - jeremy black.wav" type="audio/wav">
+    </audio>
+    <p>Se não conseguir ouvir este audio pode fazer o dowload <a href="midia/beatiful mess - jeremy black.mp3" download="beatiful mess - jeremy black.mp3">aqui</a>.</p>
+
+
 </body>
 </html>
